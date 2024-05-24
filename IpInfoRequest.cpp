@@ -31,14 +31,14 @@ public:
                 return {latitude, longitude};
             } else {
                 cerr << "Erro ao analisar JSON: " << reader.getFormattedErrorMessages() << endl;
-                return {0.0, 0.0}; // Retorna valores padrão em caso de erro
+                return {0.0, 0.0}; 
             }
         } catch (curlpp::RuntimeError &e) {
             cerr << "Erro de tempo de execução: " << e.what() << endl;
-            return {0.0, 0.0}; // Retorna valores padrão em caso de erro
+            return {0.0, 0.0}; 
         } catch (curlpp::LogicError &e) {
             cerr << "Erro lógico: " << e.what() << endl;
-            return {0.0, 0.0}; // Retorna valores padrão em caso de erro
+            return {0.0, 0.0}; 
         }
     }
 };
