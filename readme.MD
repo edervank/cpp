@@ -7,3 +7,6 @@ sudo apt install libsqlite3-dev
 
 
 g++ -o weather weather_cpp.cpp -lcurlpp -lcurl -lpthread -ljsoncpp -Ilib/sqlite
+
+
+g++ -o create_db create_db.cpp -Ilib/sqlite -lsqlite3

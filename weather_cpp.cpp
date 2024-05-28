@@ -1,4 +1,5 @@
 #include "IpInfoRequest.cpp"
+#include "OpenWeatherRequest.cpp"
 #include <sqlite3.h>
 using namespace std;
 
@@ -9,11 +10,9 @@ int main(int argc, char* argv[]) {
     double latitude = location.first;
     double longitude = location.second;
 
-    cout << "Latitude: " << latitude << endl;
-    cout << "Longitude: " << longitude << endl;
-    
+
+    OpenWeatherRequest owrequest(latitude, longitude); 
 
 
-    
     return 0;
 }
