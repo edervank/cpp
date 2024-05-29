@@ -1,3 +1,4 @@
+#include <sstream>
 #include <iostream>
 #include <curlpp/cURLpp.hpp>
 #include <curlpp/Easy.hpp>
